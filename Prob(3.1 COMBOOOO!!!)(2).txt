@@ -1,0 +1,34 @@
+/*COMBO DETECTOR!!!!!
+(detects negative, positive and negative*/
+
+#include <stdio.h>
+int main() {
+    int num1;
+    printf("Input number: ");
+    scanf("%d",&num1);
+    
+    if(num1==0){
+            printf("Zero is fkin zero-RIF");
+        }
+    if(num1!=0){
+        
+        if (num1%2==0 && num1<0){
+            printf("NEGAtive even ");
+            
+        }
+        else if(num1%2 !=0 && num1<0){
+            printf("NEGAtive odd");
+        }
+       
+        else if(num1%2==0){
+            printf("Positive even");
+        }
+        else 
+        {
+            printf("Positive odd");
+        }
+    
+    }    
+
+return 0;
+}

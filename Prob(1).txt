@@ -1,0 +1,23 @@
+//Write a C program to take two numbers as input from the user and find the maximum between the two numbers using if else.
+
+#include <stdio.h>
+int main() {
+    float num1,num2;
+    printf("Input num1: ");
+    scanf("%f",&num1);
+    printf("Input num2: ");
+    scanf("%f",&num2);
+    if(num1>=num2){
+        if(num1>num2){
+            printf("Maximum: %.2f",num1);
+        }
+        else{
+            printf("They are equal");
+        }
+    
+    }else{
+        printf("Maximum: %.2f",num2);
+    }
+    return 0;
+    
+}
